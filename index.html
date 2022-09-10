@@ -416,7 +416,7 @@
 
     </footer>
 
- <div class="backdrop " data-modal>
+ <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
       <svg class="modal-cl-btn" width="18" height="18">
@@ -460,8 +460,11 @@
   <textarea name="user_message" class="modal-message-form" placeholder="Введіть текст"></textarea>
 </label>
 <label class="modal-checkbox-field">
-  <input type="checkbox" name="user_agree" class="modal-modal-form-checkbox" required>
-  Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> 
+  <input type="checkbox" name="user_agree" class="modal-form-checkbox" required>
+  <svg class="modal-checkbox-icon">
+    <use class="icon-checkbox" href="./images/icons.svg#icon-Vector"></use>
+  </svg> <span class="checkbox-text-agree">Погоджуюся з розсилкою та приймаю</span>
+  &nbsp;<a class="agreement" href="">Умови договору</a> 
 </label>
 <button type="submit" class="modal-submit-btn">Відправити</button>
     </form>
