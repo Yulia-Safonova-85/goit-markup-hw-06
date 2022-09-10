@@ -697,6 +697,14 @@ padding: 40px;
     border-radius: 50%;
     padding: 0;
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+border-color: var(--accent-color);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus .modal-cl-btn {
+    fill: var(--accent-color) 
+}
           /* Modal FORM */
 .modal-form-title {
     font-weight: 700;
